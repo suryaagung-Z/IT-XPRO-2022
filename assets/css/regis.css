@@ -1,0 +1,226 @@
+/*==============================================|FORM|==============================================*/
+body {
+  background-color: #f2f2f2 !important;
+}
+
+main.regis {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+main.regis .section {
+  padding: 20px 0;
+}
+
+main.regis .container-regis {
+  max-width: var(--width950);
+  margin: 0 auto;
+  background-color: var(--white);
+}
+
+main.regis .box-head {
+  padding: 40px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-position: center;
+  background-size: cover;
+}
+
+main.regis .box-head,
+main.regis .box-form {
+  padding: 40px 20px;
+}
+
+main.regis .logo img {
+  width: 60px;
+}
+
+main.regis .head-form {
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 170%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+main.regis form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "e1"
+    "e2"
+    "e3"
+    "e4"
+    "e5"
+    "e6"
+    "e7"
+    "e8"
+    "e9"
+    "e10"
+    "e11"
+    "e12";
+  gap: 30px;
+}
+
+main.regis form .e1 {
+  grid-area: e1;
+}
+main.regis form .e2 {
+  grid-area: e2;
+}
+main.regis form .e3 {
+  grid-area: e3;
+}
+main.regis form .e4 {
+  grid-area: e4;
+}
+main.regis form .e5 {
+  grid-area: e5;
+}
+main.regis form .e6 {
+  grid-area: e6;
+}
+main.regis form .e7 {
+  grid-area: e7;
+}
+main.regis form .e8 {
+  grid-area: e8;
+}
+main.regis form .e9 {
+  grid-area: e9;
+}
+main.regis form .e10 {
+  grid-area: e10;
+}
+main.regis form .e11 {
+  grid-area: e11;
+}
+main.regis form .e12 {
+  grid-area: e12;
+}
+
+main.regis form .each {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main.regis form .each-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main.regis form .voucer .input-btn {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main.regis form .voucer input {
+  width: 100%;
+}
+
+main.regis form .voucer .btn {
+  text-align: center;
+  padding: 10px 20px;
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(40, 167, 69);
+  cursor: pointer;
+  transition: var(--transition_03);
+  user-select: none;
+}
+
+main.regis form .voucer .btn:hover {
+  filter: brightness(90%);
+}
+
+main.regis form label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+main.regis form select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+main.regis form textarea {
+  resize: vertical;
+}
+
+main form ::placeholder {
+  transition: var(--transition_03);
+}
+
+main.regis form input,
+main.regis form textarea,
+main.regis form select {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid var(--black01);
+}
+
+main.regis form input[type="radio"] {
+  width: max-content;
+}
+
+main.regis form input:focus,
+main.regis form textarea:focus,
+main.regis form select:focus {
+  outline: none;
+}
+
+main.regis form input:focus::placeholder,
+main.regis form textarea:focus::placeholder,
+main.regis form select:focus::placeholder {
+  transition-delay: var(--transition_03);
+  opacity: 0;
+}
+
+main.regis form ::placeholder,
+main.regis form option {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+main.regis form button.submit {
+  width: max-content;
+  padding: 15px 40px;
+  color: var(--white);
+  background-color: var(--black);
+  border: 0;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: var(--transition_03);
+  user-select: none;
+}
+
+main.regis form button.submit:hover {
+  background-color: var(--black05);
+}
+
+main.regis form .box-btn .btn:active,
+main.regis form button.submit:active {
+  transform: scale(0.95);
+}

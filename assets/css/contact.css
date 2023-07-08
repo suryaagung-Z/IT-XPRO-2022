@@ -1,0 +1,172 @@
+/*==============================================|ALL|==============================================*/
+
+/*==============================================|HEADER|==============================================*/
+header.contact {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+/*==============================================|MAIN|==============================================*/
+/*~~~~~~~~|HEAD|*/
+header.contact .section.welcome-contact {
+  padding: 0;
+}
+
+header .section.welcome-contact .head-section-1 {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+header.contact .section.welcome-contact,
+main.contact .section.welcome-contact {
+  padding-top: 0;
+}
+
+main.contact .section.welcome-contact .head-section-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+header.contact .section.welcome-contact .head-contact,
+main.contact .section.welcome-contact .head-contact {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 125%;
+  margin-bottom: 40px;
+  letter-spacing: 2.5px;
+}
+
+header.contact .section.welcome-contact .head-contact {
+  margin-bottom: 0;
+}
+
+header.contact .section.welcome-contact .sub-head-contact {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+main.contact .section.welcome-contact .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+main.contact .section.welcome-contact .text {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+/*~~~~~~~~|FORM|*/
+main.contact .section.welcome-contact form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: var(--yellow);
+  border-radius: 0;
+}
+
+main.contact .section.welcome-contact form .each {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+main.contact .section.welcome-contact form label {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+main.contact .section.welcome-contact form input,
+main.contact .section.welcome-contact form textarea {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 10px;
+  background-color: transparent;
+  outline: 0;
+  border-radius: 10px;
+  resize: vertical;
+  border: 1px solid transparent;
+}
+
+main.contact .section.welcome-contact form .bottom-line {
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 1px solid var(--black);
+  border-left: 1px solid var(--black);
+  border-bottom-left-radius: 10px;
+  pointer-events: none;
+}
+
+main.contact .section.welcome-contact form input:hover,
+main.contact .section.welcome-contact form textarea:hover {
+  background-color: var(--yellowDark);
+}
+
+main.contact .section.welcome-contact form input:focus,
+main.contact .section.welcome-contact form textarea:focus {
+  border: 1px solid var(--black01);
+}
+
+main.contact .section.welcome-contact form input:focus .bottom-line,
+main.contact .section.welcome-contact form textarea:focus .bottom-line {
+  display: none !important;
+}
+
+/*~~~~~~~~|MAP|*/
+main.contact .section.map .section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "rgt" "lft";
+  gap: 40px;
+}
+
+main.contact .section.map .left {
+  grid-area: lft;
+}
+
+main.contact .section.map .left iframe {
+  width: 100%;
+  height: 400px;
+}
+
+main.contact .section.map .right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  grid-area: rgt;
+}
+
+main.contact .section.map .right .each {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main.contact .section.map .right .top .head_ {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 125%;
+}
+
+main.contact .section.map .right .top .text {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+main.contact .section.map .right .bottom .text {
+  font-size: 1.1rem;
+  font-weight: 600;
+}

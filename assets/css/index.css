@@ -1,0 +1,691 @@
+/*==============================================|ALL|==============================================*/
+
+/*==============================================|HEADER|==============================================*/
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+header .header-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+header .swiper-slide {
+  padding: 80px 0 80px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+header .boxfill {
+  width: 100%;
+}
+
+header .swiperfill {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  gap: 35px;
+}
+
+header .swiperfill a {
+  text-decoration: none;
+  width: max-content;
+}
+
+header .boxpagin {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  right: 0;
+  display: none;
+  z-index: 1;
+}
+
+header .header-swiper-pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: relative;
+}
+
+header .header-pagin-custom {
+  color: var(--white);
+  font-size: 0.8rem;
+  border: 2px solid var(--white);
+  background-color: transparent;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .swiper-pagination-bullet {
+  opacity: 0.5;
+}
+
+header .swiper-pagination-bullet-active {
+  opacity: 1;
+  border: 2px solid var(--yellow);
+}
+
+header .head {
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  position: relative;
+}
+
+header .head2 {
+  font-size: 0.9rem;
+  color: var(--white2);
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+header .btn-style1 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-transform: uppercase;
+  width: max-content;
+  background: var(--yellow);
+  color: var(--white);
+  padding: 10px 45px 10px 20px;
+  border-radius: 0.9rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em var(--yellow);
+  overflow: hidden;
+  position: relative;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+header .btn-style1 .icon {
+  background: var(--white);
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.6rem;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em var(--yellow);
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+header .btn-style1:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+header .btn-style1 .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: var(--yellow);
+}
+
+header .btn-style1:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+/*==============================================|MAIN|==============================================*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|ALL| */
+main .section.bg-parallax {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main .grid-1-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  position: relative;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|GRID|*/
+main .grid .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|WELCOME|*/
+main .section.bg-welcome {
+  background: url("../img/bg/bg1.png") -100px calc(100% + 100px) / 300px no-repeat,
+    url("../img/bg/bg2.png") calc(100% + 100px) -100px / 300px no-repeat;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|VISI|*/
+main .section.visi .grid-visi {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--white2);
+}
+
+main .section.visi .head-visi {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+}
+
+main .section.visi .text {
+  font-weight: normal;
+  text-align: center;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|KURSUS|*/
+
+main .section.kursus .box-head-kursus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+main .section.kursus .box-head-kursus .head-kursus {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+main .section.kursus .box-head-kursus .sub-head {
+  font-size: 1rem;
+}
+
+main .section.kursus .box-head-kursus .sub-head {
+  color: var(--black2);
+}
+
+main .section.kursus .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+main .section-kursus .abs {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+main .section-kursus img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(90%) saturate(120%);
+  object-fit: cover;
+  display: block;
+  transition: 0.5s;
+}
+
+main .section-kursus .box-text {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: var(--white);
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.5s;
+}
+
+main .section-kursus:hover .box-text {
+  background-color: var(--black05);
+}
+
+main .section-kursus:not(:hover) .box-text,
+main .section-kursus:not(:hover) .abs img,
+main .section-kursus:not(:hover) .head-each,
+main .section-kursus:not(:hover) .text-each {
+  transition-delay: 0.5s;
+}
+
+main .section-kursus:hover .abs img {
+  transform: scale(1.1);
+}
+
+main .section-kursus .head-each {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition-duration: var(--transition_03);
+}
+
+main .section-kursus:hover .head-each {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+main .section-kursus .text-each {
+  color: var(--white2);
+  font-size: 0.9rem;
+  line-height: 170%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: var(--transition_03);
+}
+
+main .section-kursus:hover .text-each {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+main .section-kursus .btn {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main .section-kursus .thisbtn {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 10px 0;
+  color: var(--white);
+  background-color: var(--yellow);
+  display: block;
+  transition: var(--transition_03);
+}
+
+main .section-kursus .thisbtn:nth-child(1) {
+  border-right: 1px solid var(--black02);
+}
+
+main .section-kursus .thisbtn:hover {
+  background-color: var(--yellowDark);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|KURIKULUM|*/
+main .section.kurikulum {
+  background-image: url("../img/bg/WaveLine.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .section.kurikulum .section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "desc-kurikulum"
+    "program-expert"
+    "program-profe";
+  gap: 40px;
+}
+
+main .section.kurikulum .section-kurikulum {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 20px;
+  margin: 0;
+  background-color: var(--white);
+  box-shadow: 0 2px 30px 0px var(--black01);
+  border-radius: 10px;
+  transition: 1s;
+}
+
+main .section.kurikulum .section-kurikulum:hover {
+  transform: translateY(-10px);
+}
+
+main .section.kurikulum tr td:nth-child(1) {
+  padding: 10px 10px 10px 0;
+}
+
+main .section.kurikulum tr td:nth-child(2) {
+  padding: 10px 0;
+}
+
+main .section.kurikulum table {
+  font-size: 1rem;
+  line-height: 150%;
+  text-align: start;
+}
+
+main .section.kurikulum .desc-kurikulum {
+  grid-area: desc-kurikulum;
+}
+
+main .section.kurikulum .program-expert {
+  grid-area: program-expert;
+}
+
+main .section.kurikulum .program-profe {
+  grid-area: program-profe;
+}
+
+main .section.kurikulum .head-kurikulum {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+main .section.kurikulum .head-child {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--black2);
+}
+
+main .section.kurikulum .head-kurikulum,
+main .section.kurikulum .head-child {
+  width: fit-content;
+  position: relative;
+}
+
+main .section.kurikulum .head-kurikulum::after,
+main .section.kurikulum .head-child::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--yellow);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 1s;
+}
+
+main .section.kurikulum .section-kurikulum:hover .head-kurikulum::after,
+main .section.kurikulum .section-kurikulum:hover .head-child::after {
+  width: 100%;
+}
+
+main .section.kurikulum .section-kurikulum:not(:hover) .head-kurikulum::after,
+main .section.kurikulum .section-kurikulum:not(:hover) .head-child::after {
+  right: 0;
+  left: auto;
+}
+
+main .section.kurikulum .text {
+  font-size: 1.1rem;
+  font-weight: normal;
+  text-align: justify;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|FASILITAS|*/
+main .section.fasilitas .box-head-fasilitas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+main .section.fasilitas .box-head-fasilitas .head-fasilitas {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+main .section.fasilitas .box-head-fasilitas .sub-head {
+  text-align: center;
+  color: var(--black2);
+}
+
+main .section.fasilitas .box-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+main .section.fasilitas .each {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main .section.fasilitas .icon {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .section.fasilitas .each i {
+  font-size: 3rem;
+  color: var(--yellow);
+}
+
+main .section.fasilitas .box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .section.fasilitas .head-each {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+main .section.fasilitas .text-each {
+  text-align: justify;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|TOUR|*/
+main .tur {
+  background: url("../img/bg/bg3.png") -150px 30% / 300px no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|TOUR 1|*/
+main .tur-1 .grid-1-column {
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+main .tur-1 .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 30px 0 var(--black01);
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+main .tur-1 #playpause {
+  padding: 15px 20px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: var(--yellow09);
+  position: absolute;
+  cursor: pointer;
+  visibility: visible;
+  transition: var(--transition_03);
+}
+
+main .tur-1 .hide {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+main .tur-1 #playpause:hover {
+  filter: brightness(110%);
+}
+
+main .tur-1 #thumb {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility var(--transition_03), opacity var(--transition_03);
+}
+
+main .tur-1 .thumb-hide {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+main .tur-1 video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|TOUR 2|*/
+
+main .tur-2 .box-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px 0 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+main .tur-2 img {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 40px 0 40px 0;
+  display: block;
+  transition: 1s;
+  position: inherit;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+main .tur-2 .box-img:hover img {
+  transform: scale(1.1);
+}
+
+main .tur-2 .border-inset {
+  border-radius: 40px 0 40px 0;
+}
+
+main .tur-2 .right {
+  display: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|TESTIMONI|*/
+main .section.testimoni .section-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main .section.testimoni .box-head-testimoni {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+main .section.testimoni .head-testimoni {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+main .section.testimoni .sub-head-testimoni {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+}
+
+main .section.testimoni .testimoni-swiper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  user-select: none;
+}
+
+main .section.testimoni .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+main .section.testimoni .testimoni-swiper-pagination {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5px;
+  position: relative;
+}
+
+main .section.testimoni .testimoni-pagin-custom {
+  width: 20px;
+  height: 4px;
+  background-color: var(--yellow);
+  border-radius: 0;
+}
+
+main .section.testimoni .swiper-pagination-bullet {
+  opacity: 0.5;
+}
+
+main .section.testimoni .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+main .section.testimoni .img {
+  width: max-content;
+  height: max-content;
+}
+
+main .section.testimoni img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid var(--black01);
+  object-fit: cover;
+}
+
+main .section.testimoni .caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .section.testimoni .caption .name {
+  font-weight: 600;
+}
+
+main .section.testimoni .caption .position {
+  font-size: 0.75rem;
+  color: var(--yellow);
+}
+
+main .section.testimoni .desc {
+  text-align: justify;
+  line-height: 150%;
+  margin-top: 10px;
+}

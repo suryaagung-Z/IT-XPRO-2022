@@ -1,0 +1,476 @@
+/*==============================================|ALL|==============================================*/
+header.detailkelas .normal,
+main.detail-kelas .normal {
+  text-transform: none;
+}
+
+main.detail-kelas .section.desc-singkat .head-desc,
+main.detail-kelas .section.karir .head-karir,
+main.detail-kelas .section.materi .head-materi,
+main.detail-kelas .section.project .head-project,
+main.detail-kelas .section.syarat-promo .head-sp,
+main.detail-kelas .section.tim .head-tim {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+main.detail-kelas .box-head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main.detail-kelas .sub-head {
+  color: var(--black08);
+}
+
+main.detail-kelas .text {
+  font-size: 1.1rem !important;
+  font-weight: normal !important;
+}
+
+/*==============================================|HEADER|==============================================*/
+header.detailkelas {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+header.detailkelas .swiperfill {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+header.detailkelas .head-header {
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  line-height: 120%;
+}
+
+header.detailkelas .sub-head {
+  max-width: var(--width540);
+  text-align: center;
+  color: var(--white2);
+  letter-spacing: 0.2px;
+  line-height: 170%;
+}
+
+header.detailkelas .bottom-gradient {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to top,
+    var(--white),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/*==============================================|MAIN|==============================================*/
+
+main.detail-kelas .setTopLine {
+  position: relative;
+}
+
+main.detail-kelas .setTopLine::after {
+  content: "";
+  width: 80%;
+  height: 3px;
+  background-color: var(--yellow);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: var(--transition_03);
+}
+
+main.detail-kelas .setTopLine:hover::after {
+  width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~WELCOME*/
+main.detail-kelas .section.desc-singkat .section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+main.detail-kelas .section.desc-singkat .left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+main.detail-kelas .section.desc-singkat .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main.detail-kelas .section.desc-singkat img {
+  width: 90%;
+  height: auto;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~KARIR*/
+main.detail-kelas .section.karir .section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+main.detail-kelas .section.karir .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main.detail-kelas .section.karir .right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+main.detail-kelas .section.karir img {
+  width: 90%;
+  height: auto;
+  display: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~MATERI*/
+main.detail-kelas .section.materi .section-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+main.detail-kelas .section.materi .content {
+  display: flex;
+  justify-content: center;
+}
+
+main.detail-kelas .section.materi .box-each {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+main.detail-kelas .section.materi .box-each .each {
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px 0 var(--black01);
+  transition: 1s;
+}
+
+main.detail-kelas .section.materi .box-each .each:hover {
+  transform: translateY(-8px);
+}
+
+main.detail-kelas .section.materi .box-each .head-each {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+main.detail-kelas .section.materi ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main.detail-kelas .section.materi ul li {
+  list-style-type: none;
+  position: relative;
+  margin-left: 30px;
+  line-height: 170%;
+}
+
+main.detail-kelas .section.materi ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  color: var(--yellow);
+  position: absolute;
+  left: -30px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~PROJECT*/
+main.detail-kelas .section.project .section-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+main.detail-kelas .section.project .head-project {
+  text-align: center;
+}
+
+main.detail-kelas .section.project .sub-head {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+main.detail-kelas .section.project .box-each {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+main.detail-kelas .section.project .each:hover img {
+  transform: scale(1.1);
+}
+
+main.detail-kelas .section.project .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+main.detail-kelas .section.project img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+main.detail-kelas .section.project figcaption {
+  color: var(--black08);
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~SYARAT*/
+main.detail-kelas .section.syarat-promo .section-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+main.detail-kelas .section.syarat-promo .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.detail-kelas .section.syarat-promo .box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main.detail-kelas .section.syarat-promo .each {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+main.detail-kelas .section.syarat-promo .note {
+  font-weight: 600;
+}
+
+main.detail-kelas .section.syarat-promo .syarat .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+main.detail-kelas .section.syarat-promo .syarat .box-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.detail-kelas .section.syarat-promo img {
+  width: 90%;
+  height: auto;
+}
+
+main.detail-kelas .section.syarat-promo .head-sp {
+  text-align: center;
+}
+
+main.detail-kelas .section.syarat-promo .sub-head {
+  text-align: center;
+}
+
+main.detail-kelas .section.syarat-promo ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main.detail-kelas .section.syarat-promo ul li {
+  margin-left: 30px;
+  list-style-type: none;
+  position: relative;
+  line-height: 170%;
+}
+
+main.detail-kelas .section.syarat-promo ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  color: var(--yellow);
+  position: absolute;
+  left: -30px;
+}
+
+main.detail-kelas .section.syarat-promo .promo .box-head {
+  gap: 20px;
+}
+
+main.detail-kelas .section.syarat-promo .promo .sub-head-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.1rem;
+  color: var(--yellow);
+}
+
+main.detail-kelas .section.syarat-promo .promo .before {
+  position: relative;
+}
+
+main.detail-kelas .section.syarat-promo .promo .before::after {
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  background-color: var(--yellow);
+}
+
+main.detail-kelas .section.syarat-promo .promo .rp {
+  font-weight: 600;
+}
+
+main.detail-kelas .section.syarat-promo .daftar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main.detail-kelas .section.syarat-promo .daftar a {
+  width: max-content;
+  background-color: var(--black);
+  color: var(--white);
+  display: block;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: var(--transition_03);
+}
+
+main.detail-kelas .section.syarat-promo .daftar i {
+  margin-left: 5px;
+  transition: var(--transition_03);
+}
+
+main.detail-kelas .section.syarat-promo .daftar a:hover {
+  transform: scale(0.95);
+  background-color: var(--yellow);
+}
+
+main.detail-kelas .section.syarat-promo .daftar a:hover i {
+  transform: translateX(10px);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~TIM PENGAJAR*/
+main.detail-kelas .section.tim .section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+main.detail-kelas .section.tim .head-tim {
+  text-align: center;
+}
+
+main.detail-kelas .section.tim .content {
+  width: max-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+main.detail-kelas .section.tim .each {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+main.detail-kelas .section.tim .box-img,
+main.detail-kelas .section.tim .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main.detail-kelas .section.tim .name {
+  font-weight: 600;
+}
+
+main.detail-kelas .section.tim .link a {
+  text-decoration: none;
+  color: var(--yellow);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+main.detail-kelas .section.tim .link a:hover {
+  text-decoration: underline;
+}
+
+main.detail-kelas .section.tim .position {
+  font-size: 0.9rem;
+}
+
+main.detail-kelas .section.tim .box-img {
+  width: max-content;
+  border-radius: 50%;
+  border: 5px solid var(--yellow);
+  overflow: hidden;
+}
+
+main.detail-kelas .section.tim img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+main.detail-kelas .section.tim .each:hover img {
+  transform: scale(1.1);
+}

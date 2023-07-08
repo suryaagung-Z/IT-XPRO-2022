@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruang Coding</title>
+
+    <link rel="icon" href="assets/img/logo/logo.png" />
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="assets/package/aos/dist/aos.css" />
+
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="assets/package/swiperjs/swiper-bundle.css" />
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="assets/package/fontawesome/css/all.css" />
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/universal.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="bg-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="navbar" id="navbar">
+        <div class="main-nav" id="main-nav">
+          <div class="boxnav">
+            <div class="boxnavlogo">
+              <a href="index.html">
+                <div class="navlogo1 logo" id="logo">
+                  <span class="ruang">ruang</span><br />coding
+                </div>
+              </a>
+            </div>
+
+            <div class="boxnavlink">
+              <a href="" class="iconlink">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fal"
+                  data-icon="search"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="svg-inline--fa fa-search fa-w-16 fa-2x"
+                >
+                  <path
+                    d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"
+                    class=""
+                  ></path>
+                </svg>
+                <p>search</p>
+              </a>
+              <a href="" class="iconlink">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fal"
+                  data-icon="phone"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="svg-inline--fa fa-phone fa-w-16 fa-2x"
+                >
+                  <path
+                    d="M487.8 24.1L387 .8c-14.7-3.4-29.8 4.2-35.8 18.1l-46.5 108.5c-5.5 12.7-1.8 27.7 8.9 36.5l53.9 44.1c-34 69.2-90.3 125.6-159.6 159.6l-44.1-53.9c-8.8-10.7-23.8-14.4-36.5-8.9L18.9 351.3C5 357.3-2.6 372.3.8 387L24 487.7C27.3 502 39.9 512 54.5 512 306.7 512 512 307.8 512 54.5c0-14.6-10-27.2-24.2-30.4zM55.1 480l-23-99.6 107.4-46 59.5 72.8c103.6-48.6 159.7-104.9 208.1-208.1l-72.8-59.5 46-107.4 99.6 23C479.7 289.7 289.6 479.7 55.1 480z"
+                    class=""
+                  ></path>
+                </svg>
+                <p>+62 123-456-789</p>
+              </a>
+              <a href="" class="iconlink">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fal"
+                  data-icon="map-marker-alt"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-2x"
+                >
+                  <path
+                    d="M192 96c-52.935 0-96 43.065-96 96s43.065 96 96 96 96-43.065 96-96-43.065-96-96-96zm0 160c-35.29 0-64-28.71-64-64s28.71-64 64-64 64 28.71 64 64-28.71 64-64 64zm0-256C85.961 0 0 85.961 0 192c0 77.413 26.97 99.031 172.268 309.67 9.534 13.772 29.929 13.774 39.465 0C357.03 291.031 384 269.413 384 192 384 85.961 298.039 0 192 0zm0 473.931C52.705 272.488 32 256.494 32 192c0-42.738 16.643-82.917 46.863-113.137S149.262 32 192 32s82.917 16.643 113.137 46.863S352 149.262 352 192c0 64.49-20.692 80.47-160 281.931z"
+                    class=""
+                  ></path>
+                </svg>
+                <p>view map</p>
+              </a>
+              <a href="" class="daftar">daftar</a>
+              <div class="menu" id="menu">
+                <div class="box-dots">
+                  <span class="dot top-left"></span>
+                  <span class="dot top-middle" id="dotHide"></span>
+                  <span class="dot top-right"></span>
+                  <span class="dot middle-left" id="dotHide"></span>
+                  <span class="dot middle-middle"></span>
+                  <span class="dot middle-right" id="dotHide"></span>
+                  <span class="dot bottom-left"></span>
+                  <span class="dot bottom-middle" id="dotHide"></span>
+                  <span class="dot bottom-right"></span>
+                </div>
+                <div id="ch-menu">
+                  <p>menu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-nav-hide" id="nav-hide">
+          <div class="nav-hide">
+            <div class="left">
+              <div class="box-link montserrat">
+                <a href="" id="thislink" data-type="link1">Beranda</a>
+              </div>
+              <div class="box-link montserrat">
+                <a
+                  href="javascript:void(0)"
+                  id="thislink"
+                  data-type="link1"
+                  data-subLink
+                  >Kursus <i class="fa-solid fa-angle-right myArrow"></i
+                ></a>
+                <div id="boxlink2">
+                  <div>
+                    <a
+                      href="javascript:void(0)"
+                      id="thislink"
+                      data-type="link2"
+                      data-subLink
+                      >Fundamental
+                      <i class="fa-solid fa-angle-right myArrow"></i
+                    ></a>
+                    <div id="boxlink3">
+                      <a href="">Java</a>
+                      <a href="">C / C++</a>
+                      <a href="">Golang</a>
+                    </div>
+                  </div>
+                  <div>
+                    <a
+                      href="javascript:void(0)"
+                      id="thislink"
+                      data-type="link2"
+                      data-subLink
+                      >Web Development
+                      <i class="fa-solid fa-angle-right myArrow"></i
+                    ></a>
+                    <div id="boxlink3">
+                      <a href="">Web Design</a>
+                      <a href="detail-php-basic.html">PHP Basic</a>
+                      <a href="">PHP CodeIgniter</a>
+                      <a href="">PHP Laravel</a>
+                      <a href="">React JS</a>
+                      <a href="">Vue JS</a>
+                    </div>
+                  </div>
+                  <div>
+                    <a
+                      href="javascript:void(0)"
+                      id="thislink"
+                      data-type="link2"
+                      data-subLink
+                      >Mobile Development
+                      <i class="fa-solid fa-angle-right myArrow"></i
+                    ></a>
+                    <div id="boxlink3">
+                      <a href="">Kotlin</a>
+                      <a href="">Flutter </a>
+                      <a href="">React Native</a>
+                      <a href="">Swift</a>
+                    </div>
+                  </div>
+                  <div>
+                    <a
+                      href="javascript:void(0)"
+                      id="thislink"
+                      data-type="link2"
+                      data-subLink
+                      >Coding Anak
+                      <i class="fa-solid fa-angle-right myArrow"></i
+                    ></a>
+                    <div id="boxlink3">
+                      <a href="">Kelas TK</a>
+                      <a href="">Kelas SD </a>
+                      <a href="">Kelas SMP</a>
+                    </div>
+                  </div>
+                  <a href="">Robotik</a>
+                </div>
+              </div>
+              <div class="box-link montserrat">
+                <a href="" id="thislink" data-type="link1">Blog</a>
+              </div>
+              <div class="box-link montserrat">
+                <a href="" id="thislink" data-type="link1">Galeri</a>
+              </div>
+              <div class="box-link montserrat">
+                <a
+                  href="javascript:void(0)"
+                  id="thislink"
+                  data-type="link1"
+                  data-subLink
+                  >Info <i class="fa-solid fa-angle-right myArrow"></i
+                ></a>
+                <div id="boxlink2">
+                  <a href="register.html">Pendaftaran</a>
+                  <a href="">FAQ</a>
+                  <a href="contact.html">Kontak</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-iconlink-small">
+              <div class="box">
+                <a href="" class="iconlink_small">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fal"
+                    data-icon="phone"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="svg-inline--fa fa-phone fa-w-16 fa-2x"
+                  >
+                    <path
+                      d="M487.8 24.1L387 .8c-14.7-3.4-29.8 4.2-35.8 18.1l-46.5 108.5c-5.5 12.7-1.8 27.7 8.9 36.5l53.9 44.1c-34 69.2-90.3 125.6-159.6 159.6l-44.1-53.9c-8.8-10.7-23.8-14.4-36.5-8.9L18.9 351.3C5 357.3-2.6 372.3.8 387L24 487.7C27.3 502 39.9 512 54.5 512 306.7 512 512 307.8 512 54.5c0-14.6-10-27.2-24.2-30.4zM55.1 480l-23-99.6 107.4-46 59.5 72.8c103.6-48.6 159.7-104.9 208.1-208.1l-72.8-59.5 46-107.4 99.6 23C479.7 289.7 289.6 479.7 55.1 480z"
+                      class=""
+                    ></path>
+                  </svg>
+                </a>
+                <a href="" class="iconlink_small">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fal"
+                    data-icon="map-marker-alt"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-2x"
+                  >
+                    <path
+                      d="M192 96c-52.935 0-96 43.065-96 96s43.065 96 96 96 96-43.065 96-96-43.065-96-96-96zm0 160c-35.29 0-64-28.71-64-64s28.71-64 64-64 64 28.71 64 64-28.71 64-64 64zm0-256C85.961 0 0 85.961 0 192c0 77.413 26.97 99.031 172.268 309.67 9.534 13.772 29.929 13.774 39.465 0C357.03 291.031 384 269.413 384 192 384 85.961 298.039 0 192 0zm0 473.931C52.705 272.488 32 256.494 32 192c0-42.738 16.643-82.917 46.863-113.137S149.262 32 192 32s82.917 16.643 113.137 46.863S352 149.262 352 192c0 64.49-20.692 80.47-160 281.931z"
+                      class=""
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="header-swiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(assets/img/galeri/one.jpg);
+            "
+          >
+            <div class="boxfill">
+              <div class="swiperfill">
+                <h1 class="head" data-aos="fade-left" data-aos-duration="2000">
+                  ruang coding
+                </h1>
+                <p
+                  class="head2 montserrat"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                  data-aos-delay="100"
+                >
+                  Ruang Coding menerapkan pembelajaran dalam bentuk proyek
+                  pengembangan aplikasi
+                </p>
+                <a
+                  href=""
+                  data-aos="fade-in"
+                  data-aos-duration="1500"
+                  data-aos-delay="1500"
+                >
+                  <button class="btn-style1">
+                    Daftar sekarang
+                    <div class="icon">
+                      <svg
+                        height="24"
+                        width="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(assets/img/galeri/two.jpg);
+            "
+          >
+            <div class="boxfill">
+              <div class="swiperfill">
+                <h1 class="head">memperbaiki algoritma</h1>
+                <p class="head2 montserrat">
+                  Memakai sistem khusus untuk memeriksa algoritma yang dipakai
+                  oleh peserta
+                </p>
+                <a href="">
+                  <button class="btn-style1">
+                    Info Detail
+                    <div class="icon">
+                      <svg
+                        height="24"
+                        width="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(assets/img/galeri/three.jpg);
+            "
+          >
+            <div class="boxfill">
+              <div class="swiperfill">
+                <h1 class="head">melatih problem solving</h1>
+                <p class="head2 montserrat">
+                  Peserta banyak diarahkan untuk mencari materi dan solusi
+                  sendiri melalui internet
+                </p>
+                <a href="">
+                  <button class="btn-style1">
+                    Info detail
+                    <div class="icon">
+                      <svg
+                        height="24"
+                        width="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(assets/img/galeri/four.jpg);
+            "
+          >
+            <div class="boxfill">
+              <div class="swiperfill">
+                <h1 class="head">melatih memahami dokumentasi</h1>
+                <p class="head2 montserrat">
+                  Peserta dilatih untuk membaca dokumentasi teknis
+                </p>
+                <a href="">
+                  <button class="btn-style1">
+                    Info detail
+                    <div class="icon">
+                      <svg
+                        height="24"
+                        width="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="boxpagin">
+        <div class="header-swiper-pagination swiper-pagination-white"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section bg-welcome">
+        <div class="section-wrapper">
+          <div class="grid-1-column grid2-1">
+            <div
+              class="head color-black-soft content-head-large-size head-bold800"
+            >
+              sambutan yang hangat
+            </div>
+            <div class="textwelcome text montserrat">
+              Setelah menulis, membaca, menghitung, coding dipandang sebagai
+              literasi dasar keempat yang perlu dikuasai. Kemampuan coding
+              menjadi salah satu skill yang perlu dikuasai oleh generasi
+              digital. Inilah yang diyakini para pendidik dan praktisi
+              teknologi. Ruang Coding hadir menjadi pusat kursus coding seperti
+              Android, iOS, Website dll dengan dibimbing oleh trainer
+              berpengalaman.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="section visi bg-parallax"
+        style="
+          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url('assets/img/galeri/five.jpg') center / cover no-repeat fixed;
+        "
+      >
+        <div class="bg-visi-2">
+          <div class="section-wrapper">
+            <div class="grid-visi">
+              <div class="head-visi head-bold800 myFadeUp_bb">misi</div>
+              <div class="text montserrat myFadeUp_bb">
+                Kursus coding terbaik yang mencetak lebih banyak Programmer di
+                Indonesia dengan pemerataan kesempatan belajar coding secara
+                offline / online
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section kursus">
+        <div class="section-wrapper">
+          <div class="box-head-kursus">
+            <div class="sub-head sub-head-1 myFadeIn_bb">
+              <i class="fa-solid fa-palette"></i>
+              <i class="fa-solid fa-code"></i>
+              <i class="fa-solid fa-shield"></i>
+            </div>
+            <div class="head-kursus content-head-large-size head-bold800">
+              Temukan kursus yang tepat
+            </div>
+            <div class="sub-head sub-head-2">
+              Pilih beberapa kursus yang cocok dengan kebutuhan anda
+            </div>
+          </div>
+          <div class="content">
+            <div class="section-kursus">
+              <div class="abs">
+                <img src="assets/img/galeri/kursus/fundamental.jpg" />
+                <div class="box-text">
+                  <div class="head-each">Fundamental</div>
+                  <div class="text-each montserrat">
+                    Memasuki dunia pemrograman memang menantang,namun jangan
+                    sampai kita tergesa-gesa dan melupakan bahwa dalam segala
+                    hal apalagi dalam hal belajar pasti memerlukan proses. Dalam
+                    sebuah proses belajar ada elemen utamanya yang disebut
+                    sebagai fundamental
+                  </div>
+                </div>
+              </div>
+              <div class="btn">
+                <a href="" class="thisbtn">detail kursus</a>
+                <a
+                  href=""
+                  class="thisbtn"
+                  id="see-img"
+                  data-urlImg="assets/img/galeri/kursus/fundamental.jpg"
+                  >lihat gambar</a
+                >
+              </div>
+            </div>
+            <div class="section-kursus">
+              <div class="abs">
+                <img src="assets/img/galeri/kursus/web-development.jpg" />
+                <div class="box-text">
+                  <div class="head-each">Web Development</div>
+                  <div class="text-each montserrat">
+                    Membangun aplikasi yang bekerja melalui website. Semua
+                    mencakup aspek seperti desain web, mem-publish web,
+                    pemrograman web, dan manajemen database. Teknologi yang
+                    digunakan yaitu HTML, CSS, JAVASCRIPT, Dan PHP
+                  </div>
+                </div>
+              </div>
+              <div class="btn">
+                <a href="" class="thisbtn">detail kursus</a>
+                <a
+                  href=""
+                  class="thisbtn"
+                  id="see-img"
+                  data-urlImg="assets/img/galeri/kursus/web-development.jpg"
+                  >lihat gambar</a
+                >
+              </div>
+            </div>
+            <div class="section-kursus">
+              <div class="abs">
+                <img src="assets/img/galeri/kursus/mobile-development.jpg" />
+                <div class="box-text">
+                  <div class="head-each">Mobile Development</div>
+                  <div class="text-each montserrat">
+                    Membangun aplikasi yang beroperasi melalui perangkat
+                    seluler. Semua mencakup aspek seperti desain aplikasi,
+                    mem-publish aplikasi, pemrograman aplikasi, dan manajemen
+                    database
+                  </div>
+                </div>
+              </div>
+              <div class="btn">
+                <a href="" class="thisbtn">detail kursus</a>
+                <a
+                  href=""
+                  class="thisbtn"
+                  id="see-img"
+                  data-urlImg="assets/img/galeri/kursus/mobile-development.jpg"
+                  >lihat gambar</a
+                >
+              </div>
+            </div>
+            <div class="section-kursus">
+              <div class="abs">
+                <img src="assets/img/galeri/kursus/coding-anak.jpg" />
+                <div class="box-text">
+                  <div class="head-each">Coding Anak</div>
+                  <div class="text-each montserrat">
+                    Dalam belajar coding, anak dapat belajar memahami konsep
+                    logaritma sederhana, dan dapat mendorong anak untuk
+                    mengembangkan imajinasi dan kreativitasnya
+                  </div>
+                </div>
+              </div>
+              <div class="btn">
+                <a href="" class="thisbtn">detail kursus</a>
+                <a
+                  href=""
+                  class="thisbtn"
+                  id="see-img"
+                  data-urlImg="assets/img/galeri/kursus/coding-anak.jpg"
+                  >lihat gambar</a
+                >
+              </div>
+            </div>
+            <div class="section-kursus">
+              <div class="abs">
+                <img src="assets/img/galeri/kursus/robotik.jpg" />
+                <div class="box-text">
+                  <div class="head-each">Robotik</div>
+                  <div class="text-each montserrat">
+                    Robotik adalah mesin yang dapat diprogramkan untuk
+                    berinteraksi dengan objek dan meniru tindakan tertentu dari
+                    manusia maupun hewan
+                  </div>
+                </div>
+              </div>
+              <div class="btn">
+                <a href="" class="thisbtn">detail kursus</a>
+                <a
+                  href=""
+                  class="thisbtn"
+                  id="see-img"
+                  data-urlImg="assets/img/galeri/kursus/robotik.jpg"
+                  >lihat gambar</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section kurikulum">
+        <div class="section-wrapper">
+          <div class="section-kurikulum desc-kurikulum myFadeUp_cb">
+            <div class="head-kurikulum content-head-large-size head-bold800">
+              Kursus Online
+            </div>
+            <div class="text montserrat">
+              Kami menyediakan layanan khusus bagi peserta yang ingin belajar
+              coding tetapi terkendala waktu dan jarak. Ruang Coding adalah
+              aplikasi kursus coding online berupa Video Course Coding yang bisa
+              di akses dari mana saja dan kapan saja. Video Course coding dibuat
+              oleh Trainer yang berkualitas sehingga menghadirkan pembelajaran
+              yang sangat mudah dipahami.
+            </div>
+          </div>
+          <div class="section-kurikulum program-expert myFadeUp_cb">
+            <div class="head-child content-head-large-size head-bold700">
+              Kursus Reguler
+            </div>
+            <div class="text montserrat">
+              Ruang Coding menerapkan pembelajaran coding berbasis proyek atau
+              project base learning. Pada kursus coding reguler, peserta bisa
+              memilih ingin belajar secara offline atau online. Kursus akan
+              dipandu oleh trainer secara langsung melalui tatap muka dikelas
+              bagi yang offline, dan untuk yang online peserta akan dipandu oleh
+              trainer melalui conference menggunakan aplikasi zoom atau google
+              meet.
+            </div>
+          </div>
+          <div class="section-kurikulum program-profesional myFadeUp_cb">
+            <div class="head-child content-head-large-size head-bold700">
+              Corporate Training
+            </div>
+            <div class="text montserrat">
+              Ruang Coding telah banyak memberikan training IT terutama materi
+              coding untuk berbagai macam lembaga baik lembaga pemerintahan
+              maupun lembaga swasta. Kami memberikan jasa corporate training
+              tidak terbatas untuk lembaga di Jakarta saja, tapi mencakup
+              beberapa kota di Indonesia. Materi training yang kami tawarkan
+              sangat beragam mulai dari training android, ios, web design, PHP
+              CodeIgniter, PHP Laravel, Java dan lain sebagainya.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section fasilitas">
+        <div class="section-wrapper">
+          <div class="box-head-fasilitas">
+            <div
+              class="head-fasilitas content-head-large-size head-bold800 myFadeIn_bb"
+            >
+              fasilitas
+            </div>
+            <div class="sub-head myFadeIn_bb">Nyaman dan Berkualitas</div>
+          </div>
+          <div class="box-content">
+            <div class="each myFadeUp_bb">
+              <div class="icon">
+                <i class="fa-regular fa-file-code"></i>
+              </div>
+              <div class="box-text">
+                <div class="head-each">Modul</div>
+                <div class="text-each text montserrat">
+                  Tersedia modul berupa softcopy untuk memudahkan peserta
+                  mengulangi materi yang diberikan selama kursus
+                </div>
+              </div>
+            </div>
+
+            <div class="each myFadeUp_bb">
+              <div class="icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="box-text">
+                <div class="head-each">Sertifikat</div>
+                <div class="text-each text montserrat">
+                  Setelah kursus / training selesai, setiap peserta akan
+                  mendapatkan sertifikat completion yang dikeluarkan oleh Ruang
+                  Coding
+                </div>
+              </div>
+            </div>
+
+            <div class="each myFadeUp_bb">
+              <div class="icon">
+                <i class="fa-solid fa-shirt"></i>
+              </div>
+              <div class="box-text">
+                <div class="head-each">T-Shirt (Kaos)</div>
+                <div class="text-each text montserrat">
+                  Setiap peserta akan mendapatkan tshirt (kaos) setelah
+                  mengikuti Kursus / training
+                </div>
+              </div>
+            </div>
+
+            <div class="each myFadeUp_bb">
+              <div class="icon">
+                <i class="fa-solid fa-snowflake"></i>
+              </div>
+              <div class="box-text">
+                <div class="head-each">Ruangan Full AC</div>
+                <div class="text-each text montserrat">
+                  Setiap ruangan di Rumah Coding dilengkapi dengan AC agar
+                  proses belajar menjadi nyaman sehingga materi lebih mudah
+                  dicerna
+                </div>
+              </div>
+            </div>
+
+            <div class="each myFadeUp_bb">
+              <div class="icon">
+                <i class="fa-solid fa-wifi"></i>
+              </div>
+              <div class="box-text">
+                <div class="head-each">Akses Internet</div>
+                <div class="text-each text montserrat">
+                  Kami menyediakan akses internet (wifi) untuk menunjang
+                  kelancaran proses Kursus / training
+                </div>
+              </div>
+            </div>
+
+            <div class="each myFadeUp_bb">
+              <div class="icon">
+                <i class="fa-solid fa-cookie-bite"></i>
+              </div>
+              <div class="box-text">
+                <div class="head-each">Lunch & Snack</div>
+                <div class="text-each text montserrat">
+                  Makan siang dan snack juga disediakan agar peserta tidak perlu
+                  repot mencari makan siang sehingga bisa fokus dengan kursusnya
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section tur">
+        <div class="section-wrapper tur-1">
+          <div>
+            <div class="grid-1-column grid2-1">
+              <div
+                class="head content-head-large-size head-bold800 myFadeIn_bb"
+              >
+                tur video
+              </div>
+              <div class="textvideo text montserrat myFadeIn_bb">
+                Tur Video Sekolah Kursus Ruang Coding
+              </div>
+            </div>
+            <div class="video myFadeUp_cb">
+              <div
+                id="thumb"
+                style="
+                  background-image: linear-gradient(
+                      rgba(0, 0, 0, 0.1),
+                      rgba(0, 0, 0, 0.1)
+                    ),
+                    url('assets/img/galeri/six.jpg');
+                "
+              ></div>
+              <video id="thisvideo">
+                <source src="assets/video/contohvideo.mp4" type="video/mp4" />
+              </video>
+              <span id="playpause">
+                <i class="fas fa-play"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-wrapper grid tur-2">
+          <div class="grid-1-column grid2-2">
+            <div class="left">
+              <div
+                class="head content-head-medium-size head-bold700 myFadeIn_bb"
+              >
+                ikuti tur virtual ke bagian berbeda tempat kursus kami
+              </div>
+              <div class="text montserrat myFadeIn_bb">Tur Virtual</div>
+              <a href="" class="anchor-underline myFadeIn_bb">
+                ikuti tur virtual
+              </a>
+            </div>
+            <div class="right">
+              <div class="box-img">
+                <img src="assets/img/galeri/seven.jpg" />
+                <div class="border-inset"></div>
+                <a
+                  class="lihat"
+                  id="see-img"
+                  data-urlImg="assets/img/galeri/seven.jpg"
+                  >lihat</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section testimoni">
+        <div class="section-wrapper">
+          <div class="box-head-testimoni">
+            <div class="sub-head-testimoni montserrat myFadeIn_bb">
+              pengalaman dengan ruang coding
+            </div>
+            <div
+              class="head-testimoni content-head-large-size head-bold800 myFadeIn_bb"
+            >
+              testimoni
+            </div>
+          </div>
+
+          <div class="testimoni-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img myFadeIn_bb">
+                  <img src="assets/img/testimoni/user.png" />
+                </div>
+                <div class="caption myFadeIn_bb">
+                  <div class="name">John Doe</div>
+                  <div class="position">System Administrator PT one</div>
+                </div>
+                <div class="desc montserrat myFadeIn_bb">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium dolorem ab ex magnam placeat necessitatibus
+                  eligendi velit, molestias commodi officiis tempore quod
+                  tempora, odio, illum quaerat non? Cupiditate minus repellat
+                  impedit similique porro aliquid
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="img myFadeIn_bb">
+                  <img src="assets/img/testimoni/user3.png" />
+                </div>
+                <div class="caption myFadeIn_bb">
+                  <div class="name">Jane Doe</div>
+                  <div class="position">Full-Stack Web Developer</div>
+                </div>
+                <div class="desc montserrat myFadeIn_bb">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Doloribus commodi rem neque nisi, atque tenetur, consequatur
+                  quas animi consectetur itaque sunt, odit eveniet debitis
+                  pariatur necessitatibus quam possimus quibusdam quidem nemo
+                  expedita quaerat repellat at? Possimus suscipit hic ex a nulla
+                  impedit, asperiores minus
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="img myFadeIn_bb">
+                  <img src="assets/img/testimoni/user2.png" />
+                </div>
+                <div class="caption myFadeIn_bb">
+                  <div class="name">Yahya Doe</div>
+                  <div class="position">DevOps PT onetwo</div>
+                </div>
+                <div class="desc montserrat myFadeIn_bb">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis dolor blanditiis minus omnis voluptatum veritatis,
+                  optio dolores architecto molestias debitis aspernatur atque
+                  odio corrupti ullam enim maxime. Esse, minima mollitia
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="testimoni-swiper-pagination swiper-pagination-white"
+          ></div>
+        </div>
+      </div>
+    </main>
+
+    <svg
+      id="wave"
+      class="wavefooter"
+      style="transform: rotate(0deg); transition: 0.3s"
+      viewBox="0 0 1440 160"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(38, 38, 38, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(38, 38, 38, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        style="transform: translate(0, 0px); opacity: 1"
+        fill="url(#sw-gradient-0)"
+        d="M0,16L60,29.3C120,43,240,69,360,80C480,91,600,85,720,80C840,75,960,69,1080,80C1200,91,1320,117,1440,130.7C1560,144,1680,144,1800,128C1920,112,2040,80,2160,72C2280,64,2400,80,2520,93.3C2640,107,2760,117,2880,122.7C3000,128,3120,128,3240,120C3360,112,3480,96,3600,93.3C3720,91,3840,101,3960,88C4080,75,4200,37,4320,18.7C4440,0,4560,0,4680,21.3C4800,43,4920,85,5040,106.7C5160,128,5280,128,5400,109.3C5520,91,5640,53,5760,56C5880,59,6000,101,6120,117.3C6240,133,6360,123,6480,109.3C6600,96,6720,80,6840,66.7C6960,53,7080,43,7200,50.7C7320,59,7440,85,7560,96C7680,107,7800,101,7920,85.3C8040,69,8160,43,8280,29.3C8400,16,8520,16,8580,16L8640,16L8640,160L8580,160C8520,160,8400,160,8280,160C8160,160,8040,160,7920,160C7800,160,7680,160,7560,160C7440,160,7320,160,7200,160C7080,160,6960,160,6840,160C6720,160,6600,160,6480,160C6360,160,6240,160,6120,160C6000,160,5880,160,5760,160C5640,160,5520,160,5400,160C5280,160,5160,160,5040,160C4920,160,4800,160,4680,160C4560,160,4440,160,4320,160C4200,160,4080,160,3960,160C3840,160,3720,160,3600,160C3480,160,3360,160,3240,160C3120,160,3000,160,2880,160C2760,160,2640,160,2520,160C2400,160,2280,160,2160,160C2040,160,1920,160,1800,160C1680,160,1560,160,1440,160C1320,160,1200,160,1080,160C960,160,840,160,720,160C600,160,480,160,360,160C240,160,120,160,60,160L0,160Z"
+      ></path>
+    </svg>
+    <footer>
+      <div class="section">
+        <div class="section-wrapper">
+          <div class="top">
+            <div class="left">
+              <div class="line1">
+                <div class="name">Ruang Coding</div>
+                <div class="info mlt">
+                  <a href="">thisemail@gmail.com</a>
+                  &bull;
+                  <span>+62 123-456-789</span>
+                  &bull;
+                  <span>+62 987-654-321</span>
+                </div>
+                <div class="addreas">
+                  Paledang, Kec. Bogor Tengah, Kota Bogor, Jawa Barat
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="line1 mlt">
+                <a href="" class="anchor-underline">Facebook</a>
+                +
+                <a href="" class="anchor-underline">Instagram</a>
+                +
+                <a href="" class="anchor-underline">Youtube</a>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">Copyright 2022 Ruang Coding</div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal-img" class="hide-modal-img">
+      <div id="box-content-modal-img">
+        <div id="img"></div>
+        <div class="icon">
+          <button id="close"><i class="fa-solid fa-xmark"></i></button>
+          <button id="link"><i class="fa-solid fa-link"></i></button>
+          <button id="downloadImg"><i class="fa-solid fa-download"></i></button>
+          <button id="share"><i class="fa-solid fa-share"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SWIPER JS -->
+    <script src="assets/package/swiperjs/swiper-bundle.js"></script>
+
+    <!-- AOS -->
+    <script src="assets/package/aos/dist/aos.js"></script>
+
+    <!-- MY SCRIPT -->
+    <script src="assets/js/universal.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

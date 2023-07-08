@@ -1,0 +1,566 @@
+@media screen and (min-width: 576px) {
+  /*=================================MODAL IMAGE=================================*/
+  #modal-img #box-content-modal-img {
+    flex-direction: row;
+  }
+
+  #modal-img #img {
+    flex: 3;
+  }
+
+  #modal-img .icon {
+    flex-direction: column;
+  }
+
+  #modal-img .icon button {
+    font-size: 1.5rem;
+  }
+
+  /*=================================NAVBAR=================================*/
+  nav .logo {
+    font-size: 1.5rem;
+  }
+
+  nav .logo .ruang {
+    letter-spacing: 5px;
+  }
+
+  /*=================================HEADER=================================*/
+  header .head {
+    font-size: 2.5rem;
+  }
+
+  header .head2 {
+    font-size: 1rem;
+  }
+
+  header .btn-style1 {
+    font-size: 0.9rem;
+  }
+
+  /*=================================MAIN=================================*/
+  nav .boxnav,
+  nav .nav-hide,
+  header .swiperfill,
+  header .header-swiper-pagination,
+  .section-wrapper {
+    max-width: var(--width540);
+  }
+
+  /* CONTENT HEAD */
+  main .section .content-head-large-size {
+    font-size: 1.5rem;
+  }
+
+  /* VISI */
+  main .section.visi .section-wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  /* FASILITAS */
+  main .section.fasilitas .each {
+    grid-template-columns: 80px 1fr;
+  }
+
+  main .section.fasilitas .icon {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  main .section.fasilitas .head-each,
+  main .section.fasilitas .text-each {
+    text-align: start;
+  }
+
+  /* TOUR */
+  main .tur-1 .video {
+    padding: 20px;
+  }
+
+  main .tur-1 #thumb {
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  /* TESTIMONI */
+  main .section.testimoni .sub-head-testimoni {
+    font-size: 0.75rem;
+  }
+
+  /* FOOTER */
+  footer .mlt {
+    gap: 8px;
+  }
+
+  footer .mlt {
+    flex-direction: row;
+  }
+
+  /*################################################|REGIS|################################################*/
+  main.regis .section {
+    padding: 80px 0;
+  }
+
+  main.regis .box-head,
+  main.regis .box-form {
+    padding: 40px;
+  }
+
+  main.regis form .voucer .input-btn {
+    grid-template-columns: 1fr auto;
+  }
+
+  main.regis form .voucer .btn {
+    border-radius: 0 5px 5px 0;
+  }
+
+  main.regis .logo img {
+    width: 80px;
+  }
+
+  /*################################################|CONTACT|################################################*/
+  /* HEAD */
+  main.contact .section.welcome-contact .head-contact,
+  header.contact .section.welcome-contact .head-contact {
+    font-size: 2.5rem;
+  }
+
+  main.contact .section.welcome-contact form {
+    padding: 60px;
+    gap: 60px;
+  }
+
+  /* MAP */
+  main.contact .section.map .left iframe {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*=================================MODAL IMAGE=================================*/
+  #modal-img #box-content-modal-img {
+    max-width: 600px;
+  }
+
+  /*=================================NAVBAR=================================*/
+  nav .boxnavlink .iconlink {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  nav .nav-hide .box-iconlink-small {
+    display: none;
+  }
+
+  /*=================================HEADER=================================*/
+  header .head {
+    font-size: 2.7rem;
+  }
+
+  /*=================================MAIN=================================*/
+  nav .boxnav,
+  nav .nav-hide,
+  header .swiperfill,
+  header .header-swiper-pagination,
+  .section-wrapper {
+    max-width: var(--width720);
+  }
+
+  main .grid2-2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  main .section .head::before {
+    left: -30px;
+  }
+
+  main .section .text {
+    font-size: 1.3rem;
+  }
+
+  /* VISI */
+  main .section.visi .head-visi {
+    font-size: 2rem;
+  }
+
+  /* KURSUS */
+  main .section-kursus .abs {
+    height: 400px;
+  }
+
+  main .section.kursus .content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* KURIKULUM */
+  main .section.kurikulum .head-kurikulum {
+    font-size: 1.5rem;
+  }
+
+  /* FASILITAS */
+  main .section.fasilitas .box-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* TOUR */
+  main .tur {
+    background-position: -200px center;
+    background-size: 400px;
+  }
+
+  main .tur-1 #playpause {
+    padding: 25px 30px;
+  }
+
+  main .tur-2 .right {
+    display: block;
+  }
+
+  /* CONTENT HEAD */
+  main .section .content-head-large-size {
+    font-size: 1.7rem;
+  }
+  main .section .content-head-medium-size {
+    font-size: 1.5rem;
+  }
+
+  /* TESTIMONI */
+  main .section.testimoni img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /*################################################|REGIS|################################################*/
+  main.regis .logo img {
+    width: 100px;
+  }
+
+  main.regis .head-form {
+    font-size: 1.2rem;
+  }
+
+  main.regis form {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "e1 e2"
+      "e3 e3"
+      "e4 e5"
+      "e6 e7"
+      "e8 e8"
+      "e9 e9"
+      "e10 e10"
+      "e11 e11"
+      "e12 e12";
+  }
+
+  /*################################################|DETAIL KURSUS|################################################*/
+  /* HEADER */
+  header.detailkelas .head-header {
+    font-size: 2rem;
+  }
+
+  /* WELCOME */
+  main.detail-kelas .section.desc-singkat img,
+  main.detail-kelas .section.karir img,
+  main.detail-kelas .section.syarat-promo img {
+    width: 300px;
+  }
+
+  /* SYARAT & PROMO */
+  main.detail-kelas .section.syarat-promo .promo .sub-head-promo {
+    font-size: 1.5rem;
+  }
+
+  /* TIM PENGAJAR */
+  main.detail-kelas .section.tim .content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*################################################|CONTACT|################################################*/
+  /* HEAD */
+  main.contact .section.welcome-contact .head-contact,
+  header.contact .section.welcome-contact .head-contact {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /*=================================MODAL iMAGE=================================*/
+  main .lihat {
+    padding: 8px 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.4);
+  }
+
+  main .box-img:hover .lihat,
+  main.detail-kelas .section.project .img:hover .lihat {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  /*=================================NAVBAR=================================*/
+  nav .boxnavlink .daftar {
+    display: block;
+  }
+
+  nav .nav-hide .left {
+    width: max-content;
+  }
+
+  nav .nav-hide .left .active_small {
+    color: var(--white);
+  }
+
+  nav .nav-hide .left .active_large {
+    color: var(--yellow);
+  }
+
+  nav .nav-hide .left i.myArrow {
+    margin-left: 50px;
+    transform: rotate(0);
+  }
+
+  nav .nav-hide .left i.toUp {
+    color: var(--white);
+  }
+
+  nav .nav-hide .left #boxlink2,
+  nav .nav-hide .left #boxlink3 {
+    font-size: 1.3rem;
+    padding-left: 50px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: var(--transition_03);
+  }
+
+  nav .nav-hide .left .link2Show_large {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: translateX(0px) !important;
+  }
+
+  /*=================================HEADER=================================*/
+  header .head {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+  header .swiper-slide {
+    padding: 80px 0 140px;
+  }
+
+  header .boxpagin {
+    display: block;
+  }
+
+  /*=================================MAIN=================================*/
+  nav .boxnav,
+  nav .nav-hide,
+  header .swiperfill,
+  header .header-swiper-pagination,
+  .section-wrapper {
+    max-width: var(--width950);
+  }
+
+  main .grid2-1 {
+    grid-template-columns: auto 1fr;
+    gap: 80px !important;
+  }
+
+  main .grid2-1 .head {
+    width: 200px;
+  }
+
+  main .section .text {
+    font-size: 1.5rem;
+  }
+
+  /* VISI */
+  main .section.visi .text {
+    font-size: 1.4rem;
+  }
+
+  /* KURSUS */
+  main .section.kursus .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* KURIKULUM */
+  main .section.kurikulum .section-wrapper {
+    max-width: var(--width720);
+  }
+
+  /* FOOTER */
+  footer .section-wrapper .top {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  footer .right {
+    justify-content: flex-end;
+  }
+
+  footer .mlt {
+    gap: 10px;
+  }
+
+  /*################################################|REGIS|################################################*/
+  main.regis .head-form {
+    font-size: 1.5rem;
+  }
+
+  /*################################################|DETAIL KURSUS|################################################*/
+  /* HEADER */
+  header.detailkelas .head-header {
+    font-size: 2.5rem;
+  }
+
+  /* WELCOME */
+  main.detail-kelas .section.desc-singkat .section-wrapper {
+    grid-template-columns: 1fr auto;
+  }
+
+  /* KARIR */
+  main.detail-kelas .section.karir .section-wrapper {
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+  }
+
+  main.detail-kelas .section.karir img {
+    display: block;
+  }
+
+  /* MATERI */
+  main.detail-kelas .section.materi .box-each {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* PROJECT */
+  main.detail-kelas .section.project .box-each {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* SYARAT */
+  main.detail-kelas .section.syarat-promo .syarat .content {
+    grid-template-columns: 1fr auto;
+  }
+
+  /* TIM PENGAJAR */
+  main.detail-kelas .section.tim .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /*################################################|CONTACT|################################################*/
+  /* HEAD */
+  main.contact .section.welcome-contact .head-contact,
+  header.contact .section.welcome-contact .head-contact {
+    font-size: 4rem;
+  }
+
+  main.contact .section.welcome-contact .head-contact {
+    margin-bottom: 80px;
+  }
+
+  main.contact .section.welcome-contact .content {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+  }
+
+  main.contact .section.welcome-contact form {
+    border-radius: 40px 0 40px 0;
+  }
+
+  /* MAP */
+  main.contact .section.map .section-wrapper {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: "lft rgt";
+    gap: 60px;
+  }
+
+  main.contact .section.map .left iframe {
+    height: 100%;
+  }
+
+  main.contact .section.map .right {
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /*=================================HEADER=================================*/
+  header .head {
+    font-size: 3.4rem;
+  }
+
+  /*=================================MAIN=================================*/
+  nav .boxnav,
+  nav .nav-hide,
+  header .swiperfill,
+  header .header-swiper-pagination,
+  .section-wrapper {
+    max-width: var(--width1180);
+  }
+
+  main .section {
+    padding: 120px 0;
+  }
+
+  main .section .head::before {
+    left: -50px;
+  }
+
+  main .section .content-head-large-size {
+    font-size: 2rem;
+  }
+
+  /* KURIKULUM */
+  main .section.kurikulum .section-wrapper {
+    max-width: var(--width1180);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "program-expert desc-kurikulum program-profe";
+  }
+
+  main .section.kurikulum .section-kurikulum:nth-child(2) {
+    margin-top: 80px;
+  }
+
+  main .section.kurikulum .section-kurikulum:nth-child(3) {
+    margin-top: 130px;
+  }
+
+  /* TESTIMONI */
+  main .section.testimoni .section-wrapper,
+  main .section.visi .section-wrapper {
+    max-width: var(--width950);
+  }
+
+  /*################################################|DETAIL KURSUS|################################################*/
+  main.detail-kelas .section.desc-singkat img,
+  main.detail-kelas .section.karir img,
+  main.detail-kelas .section.syarat-promo img {
+    width: 400px;
+  }
+
+  /* MATERI */
+  main.detail-kelas .section.materi .box-each {
+    width: var(--width950);
+  }
+
+  /*################################################|CONTACT|################################################*/
+  main.contact .section.welcome-contact .head-contact,
+  header.contact .section.welcome-contact .head-contact {
+    font-size: 4.8rem;
+  }
+}
